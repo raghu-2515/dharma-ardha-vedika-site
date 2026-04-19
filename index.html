@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DharmaArdhaVedika</title>
+    <meta
+      name="description"
+      content="A personal knowledge dashboard focused on finance, learning, literature, and thoughtful pursuits."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero" id="top">
+        <nav class="topbar">
+          <a class="brand" href="#top">DharmaArdhaVedika</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+            Menu
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#home-focus">Home</a>
+            <a href="#personal-finance">Personal Finance</a>
+            <a href="#learning">Learning</a>
+            <a href="#literature">Literature</a>
+            <a href="#tools">Tools</a>
+            <a href="#pursuits">Current Pursuits</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Knowledge Dashboard</p>
+            <h1>In pursuit of prosperity, learning, and depth.</h1>
+            <p class="lede">
+              A living home page for the themes I return to most often: markets, literature,
+              AI tools, and deliberate study.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#home-focus">Explore Home</a>
+              <a class="button" href="#personal-finance">View Curated Links</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-kicker">Right now</p>
+            <div class="signal-list" id="heroSignals"></div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section-tight" id="home-focus">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Home</p>
+              <h2>The themes shaping this site</h2>
+            </div>
+            <p class="section-note">
+              A cleaner version of your Google Sites homepage, organized around pursuits instead
+              of scattered links.
+            </p>
+          </div>
+
+          <div class="focus-grid" id="focusGrid"></div>
+        </section>
+
+        <section class="section" id="personal-finance">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Personal Finance</p>
+              <h2>Markets, portfolio context, and macro research</h2>
+            </div>
+            <p class="section-note">
+              This section keeps your investing and finance references together in a way that is
+              useful and calm rather than dense.
+            </p>
+          </div>
+
+          <div class="resource-links-grid" id="financeGrid"></div>
+        </section>
+
+        <section class="section" id="learning">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Learning</p>
+              <h2>AI, machine learning, and practical exploration</h2>
+            </div>
+            <p class="section-note">
+              A lane for model platforms, learning resources, and tools that support active study.
+            </p>
+          </div>
+
+          <div class="resource-links-grid" id="learningGrid"></div>
+        </section>
+
+        <section class="section" id="literature">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Literature</p>
+              <h2>Books, essays, and reflective reading</h2>
+            </div>
+            <p class="section-note">
+              This section can evolve into your reading lane, where literature sits beside ideas
+              and notes rather than being isolated.
+            </p>
+          </div>
+
+          <div class="resource-links-grid" id="literatureGrid"></div>
+        </section>
+
+        <section class="section" id="tools">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Tools</p>
+              <h2>Platforms and utilities I return to often</h2>
+            </div>
+            <p class="section-note">
+              Useful companions and quick-access destinations that support work, thinking, and
+              experimentation.
+            </p>
+          </div>
+
+          <div class="resource-links-grid" id="toolsGrid"></div>
+        </section>
+
+        <section class="section section-split" id="pursuits">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Current Pursuits</p>
+              <h2>What deserves attention now</h2>
+            </div>
+          </div>
+
+          <div class="pursuits-layout">
+            <div class="pursuit-panel">
+              <div class="mini-card">
+                <p class="panel-kicker">Featured</p>
+                <h3>Quarterly focus</h3>
+                <p>
+                  Use this area to spotlight one active theme such as portfolio review, a reading
+                  project, or an AI learning track.
+                </p>
+              </div>
+              <div class="pursuit-list" id="pursuitList"></div>
+            </div>
+
+            <div class="notes-panel">
+              <div class="quote-card">
+                <p class="panel-kicker">Guiding Thought</p>
+                <blockquote>
+                  A homepage can be a place to orient attention, not just display identity.
+                </blockquote>
+              </div>
+              <div class="social-panel">
+                <p class="panel-kicker">Signals</p>
+                <div class="social-links" id="socialLinks"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
