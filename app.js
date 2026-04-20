@@ -1,4 +1,18 @@
 const siteContent = {
+  heroSignals: [
+    {
+      title: "Market Lens",
+      note: "Review portfolio trackers, macro signals, super-investor ideas, and long-horizon investing references.",
+    },
+    {
+      title: "Learning Lane",
+      note: "Keep AI platforms, machine learning resources, and practical study tools one click away.",
+    },
+    {
+      title: "Wisdom Practice",
+      note: "Bring literature, reflection, and durable reading into the same personal dashboard.",
+    },
+  ],
   focusAreas: [
     {
       tag: "Home",
@@ -293,16 +307,15 @@ const siteContent = {
   ],
 };
 
-function renderHeroFocusAreas() {
-  const container = document.querySelector("#heroFocusGrid");
-  container.innerHTML = siteContent.focusAreas
+function renderHeroSignals() {
+  const container = document.querySelector("#heroSignals");
+  container.innerHTML = siteContent.heroSignals
     .map(
-      (area) => `
-        <article class="hero-focus-card">
-          <span class="hero-focus-tag">${area.tag}</span>
-          <strong>${area.title}</strong>
-          <span>${area.body}</span>
-        </article>
+      (item) => `
+        <div class="signal-item">
+          <strong>${item.title}</strong>
+          <span>${item.note}</span>
+        </div>
       `
     )
     .join("");
@@ -310,9 +323,6 @@ function renderHeroFocusAreas() {
 
 function renderFocusAreas() {
   const container = document.querySelector("#focusGrid");
-  if (!container) {
-    return;
-  }
   container.innerHTML = siteContent.focusAreas
     .map(
       (area) => `
@@ -396,7 +406,7 @@ function setupMenuToggle() {
   });
 }
 
-renderHeroFocusAreas();
+renderHeroSignals();
 renderFocusAreas();
 renderResources();
 renderPursuits();

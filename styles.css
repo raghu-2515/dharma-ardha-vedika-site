@@ -262,14 +262,12 @@ h3 {
   background: rgba(255, 247, 239, 0.84);
 }
 
-.signal-list,
-.hero-focus-grid {
+.signal-list {
   display: grid;
   gap: 10px;
 }
 
-.signal-item,
-.hero-focus-card {
+.signal-item {
   display: grid;
   gap: 4px;
   padding: 12px 14px;
@@ -278,29 +276,13 @@ h3 {
   border: 1px solid rgba(28, 36, 31, 0.08);
 }
 
-.signal-item strong,
-.hero-focus-card strong {
+.signal-item strong {
   font-size: 0.96rem;
 }
 
-.signal-item span,
-.hero-focus-card span:last-child {
+.signal-item span {
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.hero-focus-tag {
-  display: inline-flex;
-  width: fit-content;
-  margin-bottom: 4px;
-  padding: 5px 9px;
-  border-radius: 999px;
-  background: rgba(41, 68, 59, 0.09);
-  color: var(--forest);
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 .section {
