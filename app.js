@@ -54,76 +54,86 @@ const siteContent = {
   sections: {
     finance: [
       {
-        title: "Yahoo Finance / My Portfolio",
-        href: "https://finance.yahoo.com/portfolios",
-        description: "A practical first stop for portfolio movement, watchlists, and day-to-day market context.",
-        label: "Market hub",
-        image:
-          "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80",
+        heading: "My Portfolio",
+        items: [
+          {
+            title: "Yahoo Finance / My Portfolio",
+            href: "https://finance.yahoo.com/portfolios",
+            description: "A practical first stop for portfolio movement, watchlists, and day-to-day market context.",
+            label: "Market hub",
+            image:
+              "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "My Portfolio Tracker",
+            href: "https://stock-portfolio-tracker-40279.web.app/",
+            description: "Your own tracker for a more personal monitoring rhythm and a clearer view of what you hold.",
+            label: "Personal",
+            image:
+              "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=900&q=80",
+          },
+        ],
       },
       {
-        title: "Morningstar Markets",
-        href: "https://www.morningstar.com/markets",
-        description: "A steadier research lane for funds, markets, and valuation-minded perspective.",
-        label: "Research",
-        image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "MSN Money",
-        href: "https://www.msn.com/en-us/money",
-        description: "A quick read on headlines and market movement when you want a second pulse.",
-        label: "Pulse",
-        image:
-          "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "Dataroma / Super Investors",
-        href: "https://www.dataroma.com/m/home.php",
-        description: "Track respected investors and use their filings as one thoughtful input into idea generation.",
-        label: "Tracking",
-        image:
-          "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "ETF Database",
-        href: "https://etfdb.com/",
-        description: "Compare ETFs, study exposures, and keep fund research close when allocation questions come up.",
-        label: "Screening",
-        image:
-          "https://images.unsplash.com/photo-1518186233392-c232efbf2373?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "FINRA Fund Analyzer",
-        href: "https://tools.finra.org/fund_analyzer/",
-        description: "A useful check on fund fees and the long-term cost of seemingly small decisions.",
-        label: "Analyzer",
-        image:
-          "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "FRED Data",
-        href: "https://fred.stlouisfed.org/",
-        description: "Macro data for rates, inflation, unemployment, and the broader economic backdrop.",
-        label: "Macro",
-        image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "Macrotrends",
-        href: "https://www.macrotrends.net/",
-        description: "Historical charts and financials that make it easier to zoom out and see the longer arc.",
-        label: "History",
-        image:
-          "https://images.unsplash.com/photo-1468254095679-bbcba6f40fba?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "My Portfolio Tracker",
-        href: "https://stock-portfolio-tracker-40279.web.app/",
-        description: "Your own tracker for a more personal monitoring rhythm and a clearer view of what you hold.",
-        label: "Personal",
-        image:
-          "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=900&q=80",
+        heading: "Market Research & Analysis",
+        items: [
+          {
+            title: "Morningstar Markets",
+            href: "https://www.morningstar.com/markets",
+            description: "A steadier research lane for funds, markets, and valuation-minded perspective.",
+            label: "Research",
+            image:
+              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "MSN Money",
+            href: "https://www.msn.com/en-us/money",
+            description: "A quick read on headlines and market movement when you want a second pulse.",
+            label: "Pulse",
+            image:
+              "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "Dataroma / Super Investors",
+            href: "https://www.dataroma.com/m/home.php",
+            description: "Track respected investors and use their filings as one thoughtful input into idea generation.",
+            label: "Tracking",
+            image:
+              "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "ETF Database",
+            href: "https://etfdb.com/",
+            description: "Compare ETFs, study exposures, and keep fund research close when allocation questions come up.",
+            label: "Screening",
+            image:
+              "https://images.unsplash.com/photo-1518186233392-c232efbf2373?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "FINRA Fund Analyzer",
+            href: "https://tools.finra.org/fund_analyzer/",
+            description: "A useful check on fund fees and the long-term cost of seemingly small decisions.",
+            label: "Analyzer",
+            image:
+              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "FRED Data",
+            href: "https://fred.stlouisfed.org/",
+            description: "Macro data for rates, inflation, unemployment, and the broader economic backdrop.",
+            label: "Macro",
+            image:
+              "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
+          },
+          {
+            title: "Macrotrends",
+            href: "https://www.macrotrends.net/",
+            description: "Historical charts and financials that make it easier to zoom out and see the longer arc.",
+            label: "History",
+            image:
+              "https://images.unsplash.com/photo-1468254095679-bbcba6f40fba?auto=format&fit=crop&w=900&q=80",
+          },
+        ],
       },
     ],
     learning: [
@@ -243,22 +253,6 @@ const siteContent = {
         image:
           "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80",
       },
-      {
-        title: "Perplexity",
-        href: "https://www.perplexity.ai/",
-        description: "Useful when a quick synthesis or exploratory answer helps move an idea forward.",
-        label: "Companion",
-        image:
-          "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "OpenAI",
-        href: "https://openai.com/",
-        description: "A core platform link for model exploration and practical AI use.",
-        label: "Platform",
-        image:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
-      },
     ],
   },
   pursuits: [
@@ -307,14 +301,14 @@ const siteContent = {
   ],
 };
 
-function renderHeroSignals() {
-  const container = document.querySelector("#heroSignals");
-  container.innerHTML = siteContent.heroSignals
+function renderHeroFocusCards() {
+  const container = document.querySelector("#heroFocusCards");
+  container.innerHTML = siteContent.focusAreas
     .map(
-      (item) => `
-        <div class="signal-item">
-          <strong>${item.title}</strong>
-          <span>${item.note}</span>
+      (area) => `
+        <div class="hero-focus-card" style="background-image: linear-gradient(180deg, rgba(12,15,14,0.04), rgba(12,15,14,0.55)), url('${area.image}');">
+          <span class="hero-focus-tag">${area.tag}</span>
+          <strong>${area.title}</strong>
         </div>
       `
     )
@@ -340,8 +334,36 @@ function renderFocusAreas() {
     .join("");
 }
 
+function renderFinanceGroups() {
+  const container = document.querySelector("#financeGrid");
+  container.innerHTML = siteContent.sections.finance
+    .map(
+      (group) => `
+        <div class="resource-group">
+          <p class="resource-group-heading">${group.heading}</p>
+          <div class="resource-links-grid">
+            ${group.items
+              .map(
+                (item) => `
+              <a class="resource-link is-section-link" href="${item.href}" target="_blank" rel="noreferrer">
+                <div class="resource-thumb" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.06), rgba(12, 15, 14, 0.36)), url('${item.image}');"></div>
+                <div>
+                  <strong>${item.title}</strong>
+                  <p>${item.description}</p>
+                </div>
+                <span>${item.label}</span>
+              </a>`
+              )
+              .join("")}
+          </div>
+        </div>
+      `
+    )
+    .join("");
+}
+
 function renderResources() {
-  renderSectionLinks("#financeGrid", siteContent.sections.finance);
+  renderFinanceGroups();
   renderSectionLinks("#learningGrid", siteContent.sections.learning);
   renderSectionLinks("#literatureGrid", siteContent.sections.literature);
   renderSectionLinks("#toolsGrid", siteContent.sections.tools);
@@ -406,9 +428,6 @@ function setupMenuToggle() {
   });
 }
 
-renderHeroSignals();
-renderFocusAreas();
+renderHeroFocusCards();
 renderResources();
-renderPursuits();
-renderSocials();
 setupMenuToggle();
