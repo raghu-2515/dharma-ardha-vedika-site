@@ -306,7 +306,7 @@ function renderHeroFocusCards() {
   container.innerHTML = siteContent.focusAreas
     .map(
       (area) => `
-        <div class="hero-focus-card" style="background-image: linear-gradient(180deg, rgba(12,15,14,0.04), rgba(12,15,14,0.55)), url('${area.image}');">
+        <div class="hero-focus-card">
           <span class="hero-focus-tag">${area.tag}</span>
           <strong>${area.title}</strong>
         </div>
