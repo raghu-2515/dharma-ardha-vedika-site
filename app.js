@@ -315,24 +315,6 @@ function renderHeroFocusCards() {
     .join("");
 }
 
-function renderFocusAreas() {
-  const container = document.querySelector("#focusGrid");
-  container.innerHTML = siteContent.focusAreas
-    .map(
-      (area) => `
-        <article class="focus-card">
-          <div class="card-image" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.08), rgba(12, 15, 14, 0.42)), url('${area.image}');"></div>
-          <span class="tag">${area.tag}</span>
-          <h3>${area.title}</h3>
-          <p>${area.body}</p>
-          <div class="focus-links">
-            ${area.pills.map((pill) => `<span>${pill}</span>`).join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
 
 function renderFinanceGroups() {
   const container = document.querySelector("#financeGrid");
