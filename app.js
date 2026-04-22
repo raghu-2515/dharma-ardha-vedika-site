@@ -154,28 +154,12 @@ const siteContent = {
           "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&q=80",
       },
       {
-        title: "eX",
-        href: "https://x.com/",
-        description: "A quick route to the public pulse when you want commentary, releases, and discussion in real time.",
-        label: "Pulse",
-        image:
-          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-      },
-      {
         title: "scikit-learn Learn",
         href: "https://scikit-learn.org/stable/",
         description: "A dependable anchor for classical machine learning references, examples, and documentation.",
         label: "ML reference",
         image:
           "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "Harvard Business Review",
-        href: "https://hbr.org/",
-        description: "Leadership and strategy ideas that widen technical learning into judgment and decision-making.",
-        label: "Broader lens",
-        image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
       },
       {
         title: "Perplexity Finance",
@@ -218,6 +202,14 @@ const siteContent = {
         label: "Classics",
         image:
           "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=80",
+      },
+      {
+        title: "Harvard Business Review",
+        href: "https://hbr.org/",
+        description: "Leadership and strategy ideas that widen technical learning into judgment and decision-making.",
+        label: "Broader lens",
+        image:
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
       },
       {
         title: "Notes and Quotations",
