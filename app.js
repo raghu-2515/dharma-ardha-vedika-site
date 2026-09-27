@@ -75,13 +75,20 @@ const siteContent = {
         ],
       },
       {
+        type: "market-research",
         heading: "Market Research & Analysis",
+        description:
+          "A compact research desk for market context, fund analysis, macro data, and long-horizon perspective.",
+        image:
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
         items: [
           {
             title: "Morningstar Markets",
             href: "https://www.morningstar.com/markets",
             description: "A steadier research lane for funds, markets, and valuation-minded perspective.",
             label: "Research",
+            icon: "MS",
+            tone: "morningstar",
             image:
               "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
           },
@@ -90,6 +97,8 @@ const siteContent = {
             href: "https://www.msn.com/en-us/money",
             description: "A quick read on headlines and market movement when you want a second pulse.",
             label: "Pulse",
+            icon: "MN",
+            tone: "msn",
             image:
               "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
           },
@@ -98,6 +107,8 @@ const siteContent = {
             href: "https://www.dataroma.com/m/home.php",
             description: "Track respected investors and use their filings as one thoughtful input into idea generation.",
             label: "Tracking",
+            icon: "DR",
+            tone: "dataroma",
             image:
               "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=900&q=80",
           },
@@ -106,6 +117,8 @@ const siteContent = {
             href: "https://etfdb.com/",
             description: "Compare ETFs, study exposures, and keep fund research close when allocation questions come up.",
             label: "Screening",
+            icon: "ETF",
+            tone: "etf",
             image:
               "https://images.unsplash.com/photo-1518186233392-c232efbf2373?auto=format&fit=crop&w=900&q=80",
           },
@@ -114,6 +127,8 @@ const siteContent = {
             href: "https://tools.finra.org/fund_analyzer/",
             description: "A useful check on fund fees and the long-term cost of seemingly small decisions.",
             label: "Analyzer",
+            icon: "FN",
+            tone: "finra",
             image:
               "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
           },
@@ -122,6 +137,8 @@ const siteContent = {
             href: "https://fred.stlouisfed.org/",
             description: "Macro data for rates, inflation, unemployment, and the broader economic backdrop.",
             label: "Macro",
+            icon: "FD",
+            tone: "fred",
             image:
               "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
           },
@@ -130,30 +147,31 @@ const siteContent = {
             href: "https://www.macrotrends.net/",
             description: "Historical charts and financials that make it easier to zoom out and see the longer arc.",
             label: "History",
+            icon: "MT",
+            tone: "macrotrends",
             image:
               "https://images.unsplash.com/photo-1468254095679-bbcba6f40fba?auto=format&fit=crop&w=900&q=80",
           },
         ],
       },
     ],
-    learning: [
-      {
-        title: "OpenAI",
-        href: "https://openai.com/",
-        description: "A main lane for model exploration, product updates, and practical experimentation.",
-        label: "AI tools",
+    learning: {
+      aiTools: {
+        title: "AI Toolkit",
+        description:
+          "A focused set of AI companions for exploration, synthesis, research, and practical experimentation.",
         image:
-          "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+        items: [
+          { title: "OpenAI", href: "https://openai.com/", icon: "OA", tone: "openai" },
+          { title: "Claude", href: "https://claude.ai/", icon: "CL", tone: "claude" },
+          { title: "Gemini", href: "https://gemini.google.com/", icon: "GM", tone: "gemini" },
+          { title: "NotebookLM", href: "https://notebooklm.google/", icon: "NL", tone: "notebook" },
+          { title: "xAI Grok", href: "https://x.ai/", icon: "x", tone: "grok" },
+          { title: "Perplexity", href: "https://www.perplexity.ai/", icon: "PX", tone: "perplexity" },
+        ],
       },
-      {
-        title: "xAI Grok",
-        href: "https://x.ai/",
-        description: "A parallel model lane for comparing capabilities and staying broad in exploration.",
-        label: "Model",
-        image:
-          "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&q=80",
-      },
-      {
+      mlReference: {
         title: "scikit-learn Learn",
         href: "https://scikit-learn.org/stable/",
         description: "A dependable anchor for classical machine learning references, examples, and documentation.",
@@ -161,23 +179,7 @@ const siteContent = {
         image:
           "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
       },
-      {
-        title: "Perplexity Finance",
-        href: "https://www.perplexity.ai/",
-        description: "A quick starting point for finance and research queries when a question needs momentum.",
-        label: "Research aid",
-        image:
-          "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80",
-      },
-      {
-        title: "NotebookLM",
-        href: "https://notebooklm.google/",
-        description: "Source-grounded synthesis for study, note building, and topics that deserve repeated return.",
-        label: "Notes",
-        image:
-          "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80",
-      },
-    ],
+    },
     literature: [
       {
         title: "Valmiki Ramayana",
@@ -312,51 +314,100 @@ function renderFinanceGroups() {
   const container = document.querySelector("#financeGrid");
   container.innerHTML = siteContent.sections.finance
     .map(
-      (group) => `
-        <div class="resource-group">
-          <p class="resource-group-heading">${group.heading}</p>
-          <div class="resource-links-grid">
-            ${group.items
-              .map(
-                (item) => `
-              <a class="resource-link is-section-link" href="${item.href}" target="_blank" rel="noreferrer">
-                <div class="resource-thumb" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.06), rgba(12, 15, 14, 0.36)), url('${item.image}');"></div>
-                <div>
-                  <strong>${item.title}</strong>
-                  <p>${item.description}</p>
+      (group) =>
+        group.type === "market-research"
+          ? renderMarketResearchCard(group)
+          : `
+              <div class="resource-group">
+                <p class="resource-group-heading">${group.heading}</p>
+                <div class="resource-links-grid">
+                  ${group.items.map((item) => renderSectionLink(item)).join("")}
                 </div>
-                <span>${item.label}</span>
-              </a>`
-              )
-              .join("")}
-          </div>
-        </div>
-      `
+              </div>
+            `
     )
     .join("");
 }
 
+function renderMarketResearchCard(group) {
+  return `
+    <article class="ai-toolkit-card market-research-card">
+      <div class="ai-toolkit-image" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.08), rgba(12, 15, 14, 0.52)), url('${group.image}');"></div>
+      <div class="ai-toolkit-content">
+        <span class="ai-toolkit-kicker">Curated research</span>
+        <h3>${group.heading}</h3>
+        <p>${group.description}</p>
+        <div class="ai-tool-list market-tool-list">
+          ${group.items
+            .map(
+              (item) => `
+                <a class="ai-tool-link market-tool-link" href="${item.href}" target="_blank" rel="noreferrer">
+                  <span class="ai-tool-icon market-tool-icon-${item.tone}" aria-hidden="true">${item.icon}</span>
+                  <span>${item.title}</span>
+                </a>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
 function renderResources() {
   renderFinanceGroups();
-  renderSectionLinks("#learningGrid", siteContent.sections.learning);
+  renderLearningSection();
   renderSectionLinks("#literatureGrid", siteContent.sections.literature);
   renderSectionLinks("#toolsGrid", siteContent.sections.tools);
+}
+
+function renderLearningSection() {
+  const container = document.querySelector("#learningGrid");
+  const { aiTools, mlReference } = siteContent.sections.learning;
+
+  container.innerHTML = `
+    <article class="ai-toolkit-card">
+      <div class="ai-toolkit-image" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.08), rgba(12, 15, 14, 0.52)), url('${aiTools.image}');"></div>
+      <div class="ai-toolkit-content">
+        <span class="ai-toolkit-kicker">Curated tools</span>
+        <h3>${aiTools.title}</h3>
+        <p>${aiTools.description}</p>
+        <div class="ai-tool-list">
+          ${aiTools.items
+            .map(
+              (item) => `
+                <a class="ai-tool-link" href="${item.href}" target="_blank" rel="noreferrer">
+                  <span class="ai-tool-icon ai-tool-icon-${item.tone}" aria-hidden="true">${item.icon}</span>
+                  <span>${item.title}</span>
+                </a>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+    </article>
+    ${renderSectionLink(mlReference)}
+  `;
+}
+
+function renderSectionLink(item) {
+  return `
+    <a class="resource-link is-section-link" href="${item.href}" target="_blank" rel="noreferrer">
+      <div class="resource-thumb" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.06), rgba(12, 15, 14, 0.36)), url('${item.image}');"></div>
+      <div>
+        <strong>${item.title}</strong>
+        <p>${item.description}</p>
+      </div>
+      <span>${item.label}</span>
+    </a>
+  `;
 }
 
 function renderSectionLinks(selector, items) {
   const container = document.querySelector(selector);
   container.innerHTML = items
     .map(
-      (item) => `
-        <a class="resource-link is-section-link" href="${item.href}" target="_blank" rel="noreferrer">
-          <div class="resource-thumb" style="background-image: linear-gradient(180deg, rgba(12, 15, 14, 0.06), rgba(12, 15, 14, 0.36)), url('${item.image}');"></div>
-          <div>
-            <strong>${item.title}</strong>
-            <p>${item.description}</p>
-          </div>
-          <span>${item.label}</span>
-        </a>
-      `
+      (item) => renderSectionLink(item)
     )
     .join("");
 }

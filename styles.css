@@ -391,6 +391,126 @@ h3 {
   gap: 16px;
 }
 
+#learningGrid {
+  align-items: stretch;
+}
+
+.ai-toolkit-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow);
+}
+
+.ai-toolkit-image {
+  height: 132px;
+  background-position: center;
+  background-size: cover;
+}
+
+.ai-toolkit-content {
+  padding: 18px;
+}
+
+.ai-toolkit-kicker {
+  display: inline-flex;
+  margin-bottom: 8px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(41, 68, 59, 0.09);
+  color: var(--forest);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ai-toolkit-content h3 {
+  font-size: 1.55rem;
+}
+
+.ai-toolkit-content > p {
+  margin: 10px 0 16px;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.ai-tool-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.ai-tool-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.74);
+  font-size: 0.84rem;
+  font-weight: 700;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.ai-tool-link:hover,
+.ai-tool-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(184, 93, 63, 0.32);
+  background: #fff;
+}
+
+.ai-tool-icon {
+  display: inline-flex;
+  flex: 0 0 28px;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.ai-tool-icon-openai { background: #183c35; }
+.ai-tool-icon-claude { background: #c86542; }
+.ai-tool-icon-gemini { background: linear-gradient(135deg, #4285f4, #a56bd8, #e94f95); }
+.ai-tool-icon-notebook { background: #4066c6; }
+.ai-tool-icon-grok { background: #171717; font-size: 1rem; }
+.ai-tool-icon-perplexity { background: #167b78; }
+
+.market-research-card {
+  margin-top: 24px;
+  border-color: rgba(184, 93, 63, 0.24);
+}
+
+.market-research-card .ai-toolkit-kicker {
+  background: rgba(184, 93, 63, 0.1);
+  color: var(--accent-deep);
+}
+
+.market-tool-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.market-tool-link {
+  font-size: 0.79rem;
+}
+
+.market-tool-icon-morningstar { background: #e95527; }
+.market-tool-icon-msn { background: #116ed8; }
+.market-tool-icon-dataroma { background: #1f4a70; }
+.market-tool-icon-etf { background: #217553; }
+.market-tool-icon-finra { background: #1d556c; }
+.market-tool-icon-fred { background: #334a69; }
+.market-tool-icon-macrotrends { background: #bd4d36; }
+
 .resource-group {
   display: grid;
   gap: 12px;
@@ -690,6 +810,14 @@ blockquote {
   }
 
   .resource-link {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-tool-list {
+    grid-template-columns: 1fr;
+  }
+
+  .market-tool-list {
     grid-template-columns: 1fr;
   }
 
